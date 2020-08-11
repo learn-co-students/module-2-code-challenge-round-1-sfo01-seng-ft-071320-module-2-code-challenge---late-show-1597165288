@@ -1,0 +1,11 @@
+<%= form_with model: @episode, local: true do |f| %>
+
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+
+    <%= f.label :number %>
+    <%= f.number_field :number %>
+
+    <%= f.submit %>
+
+<% end %>
