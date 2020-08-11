@@ -1,0 +1,8 @@
+<h1> Episode show page</h1>
+
+<%= form_for @episode do |f| %>
+    <%= f.label :date %>
+    <%= f.number_field :date %>
+    <%= f.collection_select :guest_id, Guest.all, :id, :name %>
+    <%= link_to "Guest's" "/guests"%>
+    <%= f.submit %>
